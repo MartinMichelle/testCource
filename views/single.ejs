@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+a {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">User Profile Card</h2>
+
+<div class="card">
+  <img src="https://scontent-mrs2-1.xx.fbcdn.net/v/t1.0-9/16196015_10154888128487744_6901111466535510271_n.png?_nc_cat=103&_nc_oc=AQlzlGhCLBKcxg4QqS8Z7Q0EqAI_Ga3A2dcK9bvpYVuL24xkCrw0Qp5M5yLe6-BcfXQ&_nc_ht=scontent-mrs2-1.xx&oh=9b3c10e1191e993ea83cf16b7bd56525&oe=5DBA8EE9" alt="John" style="width:100%">
+  <h1><%= userdata[0].username %></h1>
+  <p class="title"><%= userdata[0].email %></p>
+ 
+  <div style="margin: 24px 0;">
+  </div>
+  <p><a href="http://localhost:8080">back to home </a></p>
+</div>
+
+</body>
+</html>
